@@ -1,1 +1,66 @@
-<h1>stuff</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Daniel Wade's Nook</title>
+		<link rel="icon" type="image/x-icon" href="yam.svg">
+		<style>
+			* {
+				color:rgb(167, 167, 167);
+				background-color: rgba(27, 27, 27, 27);
+			}
+
+			header {
+				position: relative;
+				font-size: 2rem;
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid;
+				border-color: aqua;
+				align-items: stretch;
+			}
+			button {
+				font-size: 2rem;
+				border: none;
+			}
+
+			.role {
+				text-align:left;
+			}
+
+			canvas {
+				z-index: -1;
+				position: fixed;
+			}
+
+			button:hover {
+				cursor: pointer;
+				color:cyan;
+				background-color: rgba(37, 37, 37, 37);
+			}
+
+			body {
+				margin: 0;
+			}
+
+		</style>
+	</head>
+	<body>
+		<header onclick="alert('totally implemented');">
+			<button style="margin-right: auto;">Daniel Wade</button>
+			<button style="margin-right: 50px">Projects</button>
+			<button style="margin-right: 50px">Research</button>
+			<button style="margin-right: 50px">About</button>
+		</header>
+		<!-- <canvas></canvas> -->
+		<div id="role">Junior Software Engineer</div>
+
+		<script type="module" src="three.core.js"></script>
+		<script type="module" src="three.module.js"></script>
+		<script type="module" src="main.js"></script>
+
+	</body>
+
+
+</html>
